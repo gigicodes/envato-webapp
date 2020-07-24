@@ -32,3 +32,6 @@ body {
 .d-flex {
     padding: 0px 15px;
 }
+@media (min-width: 992px) {
+    
+}
