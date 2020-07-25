@@ -71,11 +71,23 @@ body {
 .small-cards {
     margin-bottom: 20px;
     height: 191px;
-    width: 293.5px;
+    max-width: 293.5px;
 }
 .d-flex {
     padding: 0px 15px;
 }
-@media (min-width: 992px) {
-    
+.progressBar {
+    display: block;
+}
+@media (min-width: 992px) and (max-width: 1222px) {
+    .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (min-width: 576px) {
+    .col-sm-12, .col-md {
+        display: block;
+    }
 }
