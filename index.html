@@ -122,100 +122,111 @@
                </div>
             </div>
          </header>
-         <section class="container">
-           <!-- plug your content here -->
-         </section>
-   </main>
-
     <!-- Dashboard Cards  -->
-    <section id="cards">
-        <div class="container-fluid">
-            <div class="row row-width col-md-9 ml-sm-auto col-lg-10 ">
-                <div class="col-sm-4">
+        <section id="cards" class="container my-5">
+            <div class="row">
+                <div class="col">
+                    <p class="balance">$100.00</p>
+                    <span class="accentColor d-flex align-items-center"><svg class="balance-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024"><path d="M396 512a112 112 0 1 0 224 0a112 112 0 1 0-224 0zm546.2-25.8C847.4 286.5 704.1 186 512 186c-192.2 0-335.4 100.5-430.2 300.3a60.3 60.3 0 0 0 0 51.5C176.6 737.5 319.9 838 512 838c192.2 0 335.4-100.5 430.2-300.3c7.7-16.2 7.7-35 0-51.5zM508 688c-97.2 0-176-78.8-176-176s78.8-176 176-176s176 78.8 176 176s-78.8 176-176 176z"/></svg>
+                        <p class="mb-0 text-capitalize">Hide Balance</p></span>
+                </div>
+                <div class="col text-right">
+                    <button class="btn btn-warning text-white text-capitalize">Fund Account</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md">
                     <div class="card">
                         <div class="card-body">
                           <h5 class="card-title blue-text">Campaign Overview</h5>
-                          <p class="card-text">Start Date:<span>June 10,2002</span></p>
-                          <p class="card-text">End Date:<span>August 10,2000</span></p>
-                          <p class="card-text blue-text">Impressions:<span>2,347,444</span></p>
-                          <p class="card-text blue-text">Target Impression:<span>4,000,000</span></p>
+                          <p class="card-text">Start Date:<span class="space2" >June 10,2002</span></p>
+                          <p class="card-text">End Date:<span class="space2">August 10,2000</span></p>
+                          <p class="card-text blue-text">Impressions:<span class="orange space2">2,347,444</span></p>
+                          <p class="card-text blue-text">Target Impression: <span class="orange"> 4,000,000</span></p>
+                          <p>
+                              <img src="/assets/images/Group 25.svg" alt="">
+                          </p>
                         </div>
                       </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-6 col-md">
                     <div class="card small-cards" style="width: 18rem; ">
-                        <div class="card-body">
+                        <div class="card-body card-spaced">
                           <h5 class="card-title blue-text">Today's Impressions</h5>
                           <h6 class="card-text blue-text">51,284</h6>
-                          <p class="card-text"><span>16%</span>to previous day</p>
+                          <p class="card-text">
+                              <img src="/assets/images/Vector (1).svg" alt="">
+                              <span class="percent" style="color: #08B552;">16%</span>to previous day
+                          </p>
                         </div>
                     </div>
                     <div class="card" style="width: 18rem;">
-                        <div class="card-body">
+                        <div class="card-body card-spaced">
                             <h5 class="card-title blue-text">Average Daily Impressions</h5>
                             <h6 class="card-text blue-text">68,767</h6>
-                            <p class="card-text"><span>85%</span>of your daily target</p>
+                            <p class="card-text">
+                                <img src="/assets/images/Vector (2).svg" alt="">
+                                <span class="percent" style="color: red;">70%</span>of your daily target
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-6 col-md">
                     <div class="card small-cards" style="width: 18rem;">
                         <div class="card-body">
                             <h5 class="card-title blue-text">Audience Insight</h5>
-                            <p class="card-text"><span class="blue-text" >22-45</span>years old</p>
-                            <p class="card-text"><span class="blue-text" >59%</span>Male</p>
-                            <p class="card-text"><span class="blue-text" >41%</span>Female</p>
+                            <p class="card-text"><span class="blue-text space" >22-45</span>years old</p>
+                            <p class="card-text"><span class="blue-text space" >59%</span>Male</p>
+                            <p class="card-text"><span class="blue-text space" >41%</span>Female</p>
                         </div>
                     </div>
                     <div class="card" style="width: 18rem;">
-                        <div class="card-body">
+                        <div class="card-body card-spaced">
                             <h5 class="card-title blue-text">Average Weekly Impressions</h5>
                             <h6 class="card-text blue-text">997,000</h6>
-                            <p class="card-text"><span>99%</span>of your weekly target</p>
+                            <p class="card-text"><span class="orange percent">89%</span>of your weekly target</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
     <!-- Dashboard cards end -->
     <!-- Impressions graph start -->
-    <section >
-        <div class="container-fluid">
-            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+    <section class="container">
+        <div class="row">
+            <main role="main" class="col-12 ml-sm-auto px-md-4">
                 <div class="card">
                     <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                        <h1 class="h2">Impressions</h1>
-                        <div class="btn-toolbar mb-2 mb-md-0">
-                          <!-- <div class="btn-group mr-2">
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
-                          </div> -->
-                          <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
-                            <span data-feather="calendar"></span>
-                            Week Days
-                          </button>
-                        </div>
+                        <h2 class="h2">Impressions</h2>
+                        <form class="form">
+                            <div class="form-group">
+                                <select class="form-control" id="week">
+                                    <option selected>Week Days</option>
+                                    <option>Option 1</option>
+                                    <option>Option 2</option>
+                                </select>
+                            </div>
+                        </form>
                     </div>
-                    <div class="container-fluid">
+                    <div class="container">
                         <div id="linechart"></div>
                     </div>
                 </div>
             </main>
-        </div>
+        </div>    
     </section>
     <!-- Impressions graph end -->
     <!-- Locations Progress bars -->
-    <section>
-        <div class="container-fluid">
-            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+    <section class="container">
+        <div class="row">
+            <main role="main" class="col-12 ml-sm-auto px-md-4">
                 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3">
                     <h1 class="h2">Top Locations</h1>
                     <div class="btn-toolbar mb-2 mb-md-0">
-                      <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+                    <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
                         <span data-feather="calendar"></span>
                         By Countries
-                      </button>
+                    </button>
                     </div>
                 </div>
                 <div>
@@ -232,9 +243,12 @@
                         <span>Nigeria</span><span>2%</span>
                     </p>
                 </div>
-            </main>
-        </div>
+            </main> 
+        </div>  
     </section>
+   </main>
+
+    
     <!-- JS, Popper.js, and jQuery -->
     <script src="./assets/js/jquery.js"></script>
     <script src="./assets/js/popper.js"></script>
