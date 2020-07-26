@@ -54,8 +54,8 @@ body {
 }
 .balance-icon
 {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     fill: var(--accentColor);
     padding-right: 5px;
 }
@@ -67,9 +67,6 @@ body {
     font-weight: 600;
     font-size: 18px;
     line-height: 27px;
-}
-.cards {
-    
 }
 .space {
     padding-right: 25px;
@@ -101,17 +98,35 @@ body {
 .w3-grey {
     background-color:#0076FF;
 }
-@media (min-width: 992px) and (max-width: 1222px) {
+@media (min-width: 992px) and (max-width: 1300px) {
     .row {
         display: flex;
         justify-content: center;
         align-items: center;
     }
+    .col-md .card {
+        width: unset;
+    }
 }
 @media (min-width: 320px)and (max-width:480px) {
     .blue-text {
-        font-size: 20px;
-        line-height: 21px;
+        font-size: 16px;
+        line-height: 14px;
+    }
+    .small-text {
+        font-size: 11px;
+        line-height: 14px;
+    }
+    .custom-btn {
+        width: 140px;
+        height: 38px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .percent {
+        font-size: 16px;
+        line-height: 17px;
+        padding-right: 0;
     }
     .resp-center .col-md {
         display: flex;
@@ -142,6 +157,21 @@ body {
         font-size: 20px;
         line-height: 21px;
     }
+    .small-text {
+        font-size: 15px;
+        line-height: 19px;
+    }
+    .custom-btn {
+        width: 140px;
+        height: 38px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .percent {
+        font-size: 18px;
+        line-height: 20px;
+        padding-right: 0;
+    }
     .resp-center .col-md {
         display: flex;
         justify-content: center;
@@ -164,5 +194,10 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+}
+@media (min-width: 768px)and (max-width:992px) {
+    .col-md .card {
+        width: unset;
     }
 }
