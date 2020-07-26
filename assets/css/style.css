@@ -30,10 +30,16 @@ body {
 .orange {
     color:  #F58B11;
 }
+.pr-2, .space {
+    margin-right: 20px; 
+}
 .percent {
     font-size: 26px;
     line-height: 32px;
     padding-right: 15px;
+}
+.bottom-padding {
+    padding-bottom: 40px;
 }
 .balance{
     font-weight: 600;
@@ -42,22 +48,31 @@ body {
     letter-spacing: 0.2px;
     color: #333333;
 }
-
 .balance p{
     font-size: 16px;
     line-height: 26px; 
 }
 .balance-icon
 {
-    width: 60px;
-    height: 60px;
+    width: 20px;
+    height: 20px;
     fill: var(--accentColor);
+    padding-right: 5px;
+}
+.custom-btn {
+    background-color: #F58B11;
+    border-radius: 5px;
+    width: 197px;
+    height: 57px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+}
+.cards {
+    
 }
 .space {
     padding-right: 25px;
-}
-.space2 {
-    padding-left: 70px;
 }
 .card-spaced {
     line-height: 50px;
@@ -68,16 +83,23 @@ body {
     border-radius: 5px;
     border: 1px solid #fff;
 }
+.col-md .card {
+    width: 330px;
+}
+.card-height {
+    height: 475px;
+}
 .small-cards {
-    margin-bottom: 20px;
-    height: 191px;
-    max-width: 293.5px;
+    height: 227.5px;
+}
+.margin {
+     margin-bottom: 20px;
 }
 .d-flex {
     padding: 0px 15px;
 }
-.progressBar {
-    display: block;
+.w3-grey {
+    background-color:#0076FF;
 }
 @media (min-width: 992px) and (max-width: 1222px) {
     .row {
@@ -86,8 +108,61 @@ body {
         align-items: center;
     }
 }
-@media (min-width: 576px) {
-    .col-sm-12, .col-md {
-        display: block;
+@media (min-width: 320px)and (max-width:480px) {
+    .blue-text {
+        font-size: 20px;
+        line-height: 21px;
+    }
+    .resp-center .col-md {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .col-md .card {
+        width: calc(100% - 20px);
+    }
+    .resp-center .card-height {
+        display: flex;
+        height: 227.5px;
+        margin-top: 10px;
+    }
+    .small-cards {
+        width: 50%;
+        margin: 10px;
+    }
+    .pie {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (min-width: 481px)and (max-width:767px) {
+    .blue-text {
+        font-size: 20px;
+        line-height: 21px;
+    }
+    .resp-center .col-md {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .col-md .card {
+        width: calc(100% - 20px);
+    }
+    .resp-center .card-height {
+        display: flex;
+        height: 227.5px;
+        margin-top: 10px;
+    }
+    .small-cards {
+        width: 50%;
+        margin: 10px;
+    }
+    .pie {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
