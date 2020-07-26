@@ -109,12 +109,21 @@ body {
     }
 }
 @media (min-width: 320px)and (max-width:480px) {
+    .balance{
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: 0.1px;
+    }
+    .card-text1 .float-right, .small-text {
+        float: none !important;
+        line-height: 10px;
+    }
     .blue-text {
         font-size: 16px;
         line-height: 14px;
     }
     .small-text {
-        font-size: 11px;
+        font-size: 10px;
         line-height: 14px;
     }
     .custom-btn {
@@ -122,6 +131,7 @@ body {
         height: 38px;
         font-size: 12px;
         line-height: 18px;
+        margin-top: 10px;
     }
     .percent {
         font-size: 16px;
@@ -153,6 +163,11 @@ body {
     }
 }
 @media (min-width: 481px)and (max-width:767px) {
+    .balance{
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: 0.1px;
+    }
     .blue-text {
         font-size: 20px;
         line-height: 21px;
@@ -166,6 +181,7 @@ body {
         height: 38px;
         font-size: 12px;
         line-height: 18px;
+        margin-top: 10px;
     }
     .percent {
         font-size: 18px;
