@@ -14,6 +14,9 @@ body {
 .row {
     margin-right: 0px;
 }
+.pie {
+    width: 30%;
+}
 .blue-text {
     font-family: "Source Sans Pro";
     font-style: normal;
@@ -92,13 +95,37 @@ body {
 .margin {
      margin-bottom: 20px;
 }
+.form-control3 {
+    background-color: #F0F7FF;
+}
 .d-flex {
     padding: 0px 15px;
 }
-.w3-grey {
-    background-color:#0076FF;
+.progressBars .d-flex {
+    padding: 0;
 }
-@media (min-width: 992px) and (max-width: 1300px) {
+.progress {
+    height: 60px;
+    background-color: #F0F7FF;
+    margin: 10px 0;
+    border-radius: 0;
+}
+.stars {
+    width: 23%;
+}
+.color1{
+    background: #0075FF !important;
+}
+.color2{
+    background-color: rgba(0, 117, 255, 0.8) !important;
+}
+.color3{
+    background-color: rgba(0, 117, 255, 0.6) !important;
+}
+.color4{
+    background-color: rgba(0, 117, 255, 0.4) !important;
+}
+@media (min-width: 992px) and (max-width: 1330px) {
     .row {
         display: flex;
         justify-content: center;
@@ -109,13 +136,25 @@ body {
     }
 }
 @media (min-width: 320px)and (max-width:480px) {
+    .title {
+        font-size: 24px;
+        line-height: 42px;
+        letter-spacing: 0.1px;
+    }
+    .progress {
+        height: 33.78px;
+    }
     .balance{
         font-size: 32px;
         line-height: 40px;
         letter-spacing: 0.1px;
     }
+j                  .balance p{
+        font-size: 14px;
+        line-height: 23px; 
+    }
     .card-text1 .float-right, .small-text {
-        float: none !important;
+        /* float: none !important; */
         line-height: 10px;
     }
     .blue-text {
@@ -163,6 +202,13 @@ body {
     }
 }
 @media (min-width: 481px)and (max-width:767px) {
+    .title {
+        font-size: 24px;
+        line-height: 42px;
+        letter-spacing: 0.1px;
+    }
+    .progress {
+        height: 33.78px;
     .balance{
         font-size: 32px;
         line-height: 40px;

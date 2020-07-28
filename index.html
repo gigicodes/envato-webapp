@@ -117,15 +117,13 @@
                            <a class="dropdown-item" href="#">Edit Profile</a>
                            <a class="dropdown-item" href="#">Sign out</a>
                            </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+                        </div>         
             </div>
          </header>
     <!-- Dashboard Cards  -->
         <section id="cards" class="container my-5">
-            <div class="row bottom-padding">
+            <div class="container-fluid">
+            <div class="row bottom-padding ">
                 <div class="col">
                     <p class="balance">$100.00</p>
                     <span class="accentColor d-flex align-items-center"><img class="balance-icon" src="/assets/images/Vector.svg" alt="">
@@ -145,9 +143,12 @@
                           <p class="card-text">End Date:<span class="float-right small-text">August 10,2000</span></p>
                           <p class="card-text blue-text">Impressions:<span class="orange float-right">2,347,444</span></p>
                           <p class="card-text blue-text">Target Impression:<span class="orange float-right">4,000,000</span></p>
-                          <p class="pie">
-                              <img src="/assets/images/Group 25.svg" alt="">
-                          </p>
+                          <div class="pie">
+                            <!-- <div class="container pie">
+                                <div id="piechart"></div>
+                            </div> -->
+                            <img src="/assets/images/Group 25.svg" alt="">
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -191,6 +192,7 @@
                     </div>
                 </div>
             </div>
+            </div>
         </section>
     <!-- Dashboard cards end -->
     <!-- Impressions graph start -->
@@ -199,7 +201,7 @@
             <main role="main" class="col-12 ml-sm-auto px-md-4">
                 <div class="card">
                     <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                        <h2 class="h2">Impressions</h2>
+                        <h2 class="h2 title">Impressions</h2>
                         <form class="form">
                             <div class="form-group">
                                 <select class="form-control" id="week">
@@ -213,6 +215,18 @@
                     <div class="container">
                         <div id="linechart"></div>
                     </div>
+                    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3">
+                        <p>July 10 - July 22, 2020</p>
+                        <form class="form">
+                            <div class="form-group">
+                                <select class="form-control" id="week">
+                                    <option selected>Export</option>
+                                    <option>Option 1</option>
+                                    <option>Option 2</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </main>
         </div>    
@@ -223,10 +237,10 @@
         <div class="row">
             <main role="main" class="col-12 ml-sm-auto px-md-4">
                 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3">
-                    <h1 class="h2">Top Locations</h1>
+                    <h1 class="h2 title">Top Locations</h1>
                     <form class="form">
                         <div class="form-group">
-                            <select class="form-control" id="week">
+                            <select class="form-control form-control3" id="week">
                                 <option selected>By Countries</option>
                                 <option>Option 1</option>
                                 <option>Option 2</option>
@@ -234,40 +248,59 @@
                         </div>
                     </form>
                 </div>
-                <div>
-                    <!-- <div class="d-flex align-items-center"> -->
-                        <p>
-                            United States
-                            <div class="w3-light-grey w3-xlarge">
-                                <div class="w3-blue" style="height:24px;width:50%;"></div>
-                            </div>50%
-                        </p>
-                    <!-- </div> -->
-                    <p>
-                        United Kingdom
-                        <div class="w3-light-grey w3-xlarge">
-                            <div class="w3-blue" style="height:24px;width:30%"></div>
-                        </div>30%
-                    </p>
-                    <p>
-                        Canada
-                        <div class="w3-light-grey w3-xlarge">
-                            <div class="w3-container w3-blue" style="height:24px;width:18%"></div>
-                        </div>18%
-                    </p>
-                    <p>
-                       <div class="progressBar">Nigeria
-                        <div class="w3-light-grey w3-xlarge">
-                            <div class="w3-blue" style="height:24px;width:2%"></div>
-                        </div>2%
-                       </div>
-                    </p>
-                    <!-- <div style="display:inline-flex;">
-                        <span>edyuweii</span>
-                    <div class="progress" style="height:50px">
-                        <div class="progress-bar" style="width:60%;height:50px"></div>
+                <div class="progressBars">
+                    <div class="d-flex align-items-center">
+                        <span class="stars">
+                            <span class="small-text">United States</span>
+                          </span>
+                          <div class="col">
+                            <div class="progress">
+                              <div class="progress-bar bg-primary color1" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </div>
+                          <span class="percent">
+                            <span class="small-text">50%</span>
+                          </span>
                     </div>
-                    </div> -->
+                    <div class="d-flex align-items-center">
+                        <span class="stars">
+                          <span class="small-text">United Kingdom</span>
+                        </span>
+                        <div class="col">
+                          <div class="progress">
+                            <div class="progress-bar bg-primary color2" role="progressbar" style="width: 30%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                        <span class="percent">
+                          <span class="small-text">30%</span>
+                        </span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <span class="stars">
+                          <span class="small-text">Canada</span>
+                        </span>
+                        <div class="col">
+                          <div class="progress">
+                            <div class="progress-bar color3 bg-primary" role="progressbar" style="width: 18%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                        <span class="percent">
+                          <span class="small-text">18%</span>
+                        </span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <span class="stars">
+                          <span class="small-text">Nigeria</span>
+                        </span>
+                        <div class="col">
+                          <div class="progress">
+                            <div class="progress-bar color4 bg-primary" role="progressbar" style="width: 2%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                        <span class="percent">
+                          <span class="small-text">2%</span>
+                        </span>
+                    </div>
                 </div>
             </main> 
         </div>  

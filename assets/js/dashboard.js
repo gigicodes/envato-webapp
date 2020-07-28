@@ -17,7 +17,7 @@ var options = {
     curve: 'straight'
   },
   title: {
-    text: 'Product Trends by Month',
+    text: "Page Visits",
     align: 'left'
   },
   grid: {
@@ -34,23 +34,23 @@ var options = {
   var chart = new ApexCharts(document.querySelector("#linechart"), options);
   chart.render();
 
-//   var options = {
-//     series: [44, 55, 41, 17, 15],
-//     chart: {
-//     type: 'donut',
-//   },
-//   responsive: [{
-//     breakpoint: 480,
-//     options: {
-//       chart: {
-//         width: 200
-//       },
-//       legend: {
-//         position: 'bottom'
-//       }
-//     }
-//   }]
-//   };
+  var options = {
+    series: [64,36],
+    chart: {
+    type: 'donut',
+  },
+  responsive: [{
+    breakpoint: 2000,
+    options: {
+      chart: {
+        width: 300
+      },
+      legend: {
+        position: 'bottom'
+      }
+    }
+  }]
+  };
 
-//   var chart = new ApexCharts(document.querySelector("#piechart"), options);
-//   chart.render();
+  var chart = new ApexCharts(document.querySelector("#piechart"), options);
+  chart.render();
